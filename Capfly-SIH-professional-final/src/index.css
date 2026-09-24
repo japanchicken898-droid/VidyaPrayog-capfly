@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17233f;
+  background: #f7f9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --capfly-ink: #17233f;
+  --capfly-muted: #667085;
+  --capfly-blue: #2563eb;
+  --capfly-blue-dark: #1d4ed8;
+  --capfly-line: #e6ebf2;
+  --capfly-surface: #ffffff;
+  --capfly-page: #f7f9fc;
+}
+
+*:not(.font-mono):not(code):not(pre) { box-sizing: border-box; font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif !important; }
+.font-mono, code, pre { box-sizing: border-box; }
+html { background: var(--capfly-page); }
+body { margin: 0; min-width: 320px; background: var(--capfly-page); color: var(--capfly-ink); }
+button, select, input, textarea { font: inherit; }
+button { cursor: pointer; }
+
+.capfly-brand-mark {
+  display: inline-flex; height: 38px; width: 38px; align-items: center; justify-content: center;
+  border-radius: 12px; background: #eaf2ff; color: var(--capfly-blue); font-size: 20px;
+  font-weight: 800; border: 1px solid #d9e7ff; box-shadow: none;
+}
+.capfly-topbar { box-shadow: 0 1px 0 rgba(23,35,63,.04); }
+.capfly-landing { background: linear-gradient(180deg, #f7f9fc 0%, #f9fbff 100%); }
+.capfly-role-panel, .capfly-hero { box-shadow: 0 8px 28px rgba(23,35,63,.035); }
+
+/* Normalize legacy dashboard palette without changing functionality. */
+.bg-\[\#0B192C\] { background-color: #ffffff !important; color: #17233f !important; }
+.bg-\[\#14243B\] { background-color: #ffffff !important; }
+.bg-\[\#F4F7FB\] { background-color: #f7f9fc !important; }
+.bg-\[\#E0F2FE\] { background-color: #eff6ff !important; }
+.border-slate-800 { border-color: #e6ebf2 !important; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Professional shared surfaces used by existing dashboard utility classes. */
+.capfly-topbar + main, main { letter-spacing: -0.005em; }
+[class*="rounded-2xl"], [class*="rounded-xl"] { --tw-ring-offset-shadow: 0 0 #0000; }
